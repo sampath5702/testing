@@ -12,7 +12,7 @@ class LoanCalculator:
         EMI = [P x R x (1+R)^N] / [(1+R)^N - 1]
         """
         monthly_rate = self.annual_interest_rate / (12 * 100)
-        number_of_months = self.tenure_years * 12
+        number_of_months = self.tenure_years * 10
 
         if monthly_rate == 0:
             return self.principal / number_of_months
@@ -43,3 +43,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
